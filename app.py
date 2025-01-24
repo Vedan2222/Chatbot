@@ -1,12 +1,12 @@
-# from flask import Flask, request, jsonify
-# import psycopg2
-# from flask_cors import CORS  # Required for CORS handling
-# from langchain_community.llms import OpenAI
-# from langchain_community.embeddings import OpenAIEmbeddings
-# from langchain_community.vectorstores import FAISS
+from flask import Flask, request, jsonify
+import psycopg2
+from flask_cors import CORS  # Required for CORS handling
+from langchain_community.llms import OpenAI
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 
-# app = Flask(__name__)
-# CORS(app)  # This enables CORS for all routes
+app = Flask(__name__)
+CORS(app)  # This enables CORS for all routes
 
 # # Replace with your OpenAI API Key
 # OPENAI_API_KEY = "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"
